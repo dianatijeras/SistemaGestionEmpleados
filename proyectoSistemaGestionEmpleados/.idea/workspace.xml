@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a367dd-2ef5-4cb4-bbfc-8e0c19dee5c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Departamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IContribuyente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Proyecto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tecnico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Departamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IContribuyente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IContribuyente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proyecto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tecnico.java" afterDir="false" />
     </list>
+    <list id="95e6d69c-2c5c-414e-8018-7b928a0c1694" name="Changes by Cristian" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerente.java" afterDir="false" />
+    </list>
+    <list id="13fce113-e213-4eb9-a73e-be0f926ea4fb" name="Changes by Juan Jose" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +60,10 @@
     "git-widget-placeholder": "Diana",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/PROGRAMACION2/SistemaGestionEmpleados/SistemaGestionEmpleados/proyectoSistemaGestionEmpleados",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -78,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740143496455</updated>
-      <workItem from="1740143499421" duration="250000" />
+      <workItem from="1740143499421" duration="2374000" />
     </task>
     <servers />
   </component>
