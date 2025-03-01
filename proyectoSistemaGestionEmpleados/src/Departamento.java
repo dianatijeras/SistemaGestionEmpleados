@@ -5,7 +5,7 @@ public class Departamento {
 
     private String nombre;
     private String codigo;
-    private Collection<Empleado> listaEmpleados;
+    private Collection<Empleado> listaEmpleadosDepartamento;
 
     /**
      * Constructor de la clase Departamento
@@ -15,12 +15,12 @@ public class Departamento {
     public Departamento(String nombre, String codigo) {
         this.nombre = nombre;
         this.codigo = codigo;
-        this.listaEmpleados = listaEmpleados;
+        this.listaEmpleadosDepartamento = new LinkedList<>();
     }
 
     /**
      * Metodo que obtiene el nombre de un departamento
-     * @return
+     * @return nombre
      */
     public String getNombre() {
         return nombre;
@@ -55,15 +55,15 @@ public class Departamento {
      * @return
      */
     public Collection<Empleado> getListaEmpleados() {
-        return listaEmpleados;
+        return listaEmpleadosDepartamento;
     }
 
     /**
      * Metodo que establece la lista de empleados de un departamento
-     * @param listaEmpleados
+     * @param listaEmpleadosDepartamento
      */
-    public void setListaEmpleados(Collection<Empleado> listaEmpleados) {
-        this.listaEmpleados = listaEmpleados;
+    public void setListaEmpleadosDepartamento(Collection<Empleado> listaEmpleadosDepartamento) {
+        this.listaEmpleadosDepartamento = listaEmpleadosDepartamento;
     }
 
     @Override
@@ -91,6 +91,8 @@ public class Departamento {
         return centinela;
     }
 
+
+
     /**
      * Metodo para agregar un nuevo empleado a la lista de empleado
      * @param empleado
@@ -100,6 +102,4 @@ public class Departamento {
             listaEmpleadosDepartamento.add(empleado);
         }
     }
-
-
 }

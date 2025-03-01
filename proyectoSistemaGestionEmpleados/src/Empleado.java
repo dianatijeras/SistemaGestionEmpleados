@@ -63,6 +63,11 @@ public class Empleado {
         this.departamento = departamento;
     }
 
+
+    /**
+     * Metodo toString de la clase
+     * @return
+     */
     @Override
     public String toString() {
         return "Empleado{" +

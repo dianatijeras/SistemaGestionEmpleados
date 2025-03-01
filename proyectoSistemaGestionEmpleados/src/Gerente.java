@@ -58,4 +58,18 @@ public class Gerente extends Empleado implements IContribuyente {
     public void contribuir() {
         System.out.println(getNombre()+ "contribuyó" );
     }
+
+
+    /**
+     * Metodo toString de la clase
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Gerente: Nombre= "+ getNombre() +
+                ", Id= " + getId() + ", Departamento= " + getDepartamento() +
+                ", telefono= '" + telefono + '\'' +
+                ", listaProyectos= " + listaProyectos;
+    }
+
 }

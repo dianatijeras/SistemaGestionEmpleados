@@ -25,7 +25,7 @@ public class Empresa {
 
     /**
      * Metodo que obtiene el nombre de la empresa
-     * @return
+     * @return nombre
      */
     public String getNombre() {
         return nombre;
@@ -41,7 +41,7 @@ public class Empresa {
 
     /**
      * Metodo que obtiene la lista de empleados de la empresa
-     * @return
+     * @return listaEmpleados
      */
     public Collection<Empleado> getListaEmpleados() {
         return listaEmpleados;
@@ -57,7 +57,7 @@ public class Empresa {
 
     /**
      * Metodo que obtiene la lista de departamentos de la empresa
-     * @return
+     * @return listaDepartamentos
      */
     public Collection<Departamento> getListaDepartamentos() {
         return listaDepartamentos;
@@ -73,7 +73,7 @@ public class Empresa {
 
     /**
      * Metodo que obtiene la lista de proyectos de la empresa
-     * @return
+     * @return listaProyectos
      */
     public Collection<Proyecto> getListaProyectos() {
         return listaProyectos;
@@ -164,7 +164,11 @@ public class Empresa {
         agregarEmpleado(tecnico);
     }
 
-
+    /**
+     * Metodo para verificar si ya existe un empleado en la empresa con el mismo id
+     * @param id
+     * @return
+     */
     public boolean verificarEmpleado(String id) {
         boolean centinela = false;
         for (Empleado empleado : listaEmpleados) {

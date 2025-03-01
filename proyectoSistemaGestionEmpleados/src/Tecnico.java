@@ -12,6 +12,8 @@ public class Tecnico extends Empleado implements IContribuyente{
         System.out.println(getNombre()+ "contribuyó");
     }
 
+    //kkkahs
+
     @Override
     public String toString() {
         return "Tecnico{ Nombre = " +getNombre()+ ", Id= " +getId()+ ", Departamento= " +getDepartamento()+ " }";

@@ -85,6 +85,7 @@ public class Proyecto {
         return centinela;
     }
 
+    //lololo
     public void agregarEmpleado(Empleado empleado) {
         if (!verificarEmpleado(empleado.getId())) {
             listaEmpleados.add(empleado);
