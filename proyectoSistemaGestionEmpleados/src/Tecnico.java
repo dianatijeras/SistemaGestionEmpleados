@@ -9,6 +9,11 @@ public class Tecnico extends Empleado implements IContribuyente{
      */
     @Override
     public void contribuir() {
+        System.out.println(getNombre()+ "contribuyó");
+    }
 
+    @Override
+    public String toString() {
+        return "Tecnico{ Nombre = " +getNombre()+ ", Id= " +getId()+ ", Departamento= " +getDepartamento()+ " }";
     }
 }

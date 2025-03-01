@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.LinkedList;
 
 public class Departamento {
 
@@ -64,4 +65,41 @@ public class Departamento {
     public void setListaEmpleados(Collection<Empleado> listaEmpleados) {
         this.listaEmpleados = listaEmpleados;
     }
+
+    @Override
+    public String toString() {
+        return "Departamento{" +
+                "nombre='" + nombre + '\'' +
+                ", codigo='" + codigo + '\'' +
+                ", listaEmpleados=" + listaEmpleadosDepartamento +
+                '}';
+    }
+
+
+    /**
+     * Metodo para verificar si ya existe un empleado en el departamento
+     * @param id
+     * @return
+     */
+    public boolean verificarEmpleado(String id) {
+        boolean centinela = false;
+        for (Empleado empleado : listaEmpleadosDepartamento) {
+            if (empleado.getId().equals(id)) {
+                return true;
+            }
+        }
+        return centinela;
+    }
+
+    /**
+     * Metodo para agregar un nuevo empleado a la lista de empleado
+     * @param empleado
+     */
+    public void agregarEmpleado(Empleado empleado) {
+        if (!verificarEmpleado(empleado.getId())) {
+            listaEmpleadosDepartamento.add(empleado);
+        }
+    }
+
+
 }

@@ -1,5 +1,6 @@
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Gerente extends Empleado implements IContribuyente {
     private String telefono;
@@ -55,6 +56,6 @@ public class Gerente extends Empleado implements IContribuyente {
      */
     @Override
     public void contribuir() {
-
+        System.out.println(getNombre()+ "contribuyó" );
     }
 }
