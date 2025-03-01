@@ -22,7 +22,7 @@ public class Empresa {
     }
 
     /**
-     * Metodo que obtiene el nombre de una empresa
+     * Metodo que obtiene el nombre de la empresa
      * @return
      */
     public String getNombre() {
@@ -30,34 +30,57 @@ public class Empresa {
     }
 
     /**
-     * Metodo que establece el nombre de una empresa
+     * Metodo que establece el nombre de la empresa
      * @param nombre
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
+    /**
+     * Metodo que obtiene la lista de empleados de la empresa
+     * @return
+     */
     public Collection<Empleado> getListaEmpleados() {
         return listaEmpleados;
     }
 
+    /**
+     * Metodo que establece la lista de empleados de la empresa
+     * @param listaEmpleados
+     */
     public void setListaEmpleados(Collection<Empleado> listaEmpleados) {
         this.listaEmpleados = listaEmpleados;
     }
 
+    /**
+     * Metodo que obtiene la lista de departamentos de la empresa
+     * @return
+     */
     public Collection<Departamento> getListaDepartamentos() {
         return listaDepartamentos;
     }
 
+    /**
+     * Metodo que establece la lista de departamentos de la empresa
+     * @param listaDepartamentos
+     */
     public void setListaDepartamentos(Collection<Departamento> listaDepartamentos) {
         this.listaDepartamentos = listaDepartamentos;
     }
 
+    /**
+     * Metodo que obtiene la lista de proyectos de la empresa
+     * @return
+     */
     public Collection<Proyecto> getListaProyectos() {
         return listaProyectos;
     }
 
+    /**
+     * Metodo que establece la lista de proyectos de la empresa
+     * @param listaProyectos
+     */
     public void setListaProyectos(Collection<Proyecto> listaProyectos) {
         this.listaProyectos = listaProyectos;
     }
