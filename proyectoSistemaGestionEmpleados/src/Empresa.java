@@ -3,6 +3,7 @@ import java.util.LinkedList;
 
 public class Empresa {
 
+    private UnicaEmpresa unicaEmpresa;
     private String nombre;
     private Collection<Empleado> listaEmpleados;
     private Collection<Departamento> listaDepartamentos;
@@ -17,6 +18,7 @@ public class Empresa {
         this.listaEmpleados = new LinkedList<>();
         this.listaDepartamentos = new LinkedList<>();
         this.listaProyectos = new LinkedList<>();
+        this.unicaEmpresa = UnicaEmpresa.getInstancia();
     }
 
     /**

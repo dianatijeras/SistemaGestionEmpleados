@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a367dd-2ef5-4cb4-bbfc-8e0c19dee5c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UnicaEmpresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Departamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IContribuyente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IContribuyente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proyecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tecnico.java" afterDir="false" />
-    </list>
-    <list id="95e6d69c-2c5c-414e-8018-7b928a0c1694" name="Changes by Cristian" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerente.java" afterDir="false" />
     </list>
-    <list id="13fce113-e213-4eb9-a73e-be0f926ea4fb" name="Changes by Juan Jose" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,49 +18,49 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dianatijeras"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dianatijeras&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dianatijeras/SistemaGestionEmpleados.git",
-    "accountId": "cd4d346e-b053-4a17-adc7-cc3aba2ff894"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dianatijeras/SistemaGestionEmpleados.git&quot;,
+    &quot;accountId&quot;: &quot;cd4d346e-b053-4a17-adc7-cc3aba2ff894&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2tLu5nl0YwMiznUX1WX6Fc8moWa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Diana",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/PROGRAMACION2/SistemaGestionEmpleados/SistemaGestionEmpleados/proyectoSistemaGestionEmpleados",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Diana&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PROGRAMACION2/SistemaGestionEmpleados/SistemaGestionEmpleados/proyectoSistemaGestionEmpleados&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +77,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740143496455</updated>
-      <workItem from="1740143499421" duration="2374000" />
+      <workItem from="1740143499421" duration="2558000" />
+      <workItem from="1740835103034" duration="233000" />
     </task>
     <servers />
   </component>

@@ -29,6 +29,6 @@ public class Gerente extends Empleado implements IContribuyente {
 
     @Override
     public void contribuir() {
-        
+
     }
 }
