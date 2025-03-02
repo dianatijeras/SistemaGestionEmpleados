@@ -1,5 +1,6 @@
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Gerente extends Empleado implements IContribuyente {
     private String telefono;
@@ -55,6 +56,20 @@ public class Gerente extends Empleado implements IContribuyente {
      */
     @Override
     public void contribuir() {
-
+        System.out.println(getNombre()+ "contribuyó" );
     }
+
+
+    /**
+     * Metodo toString de la clase
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Gerente: Nombre= "+ getNombre() +
+                ", Id= " + getId() + ", Departamento: "+(getDepartamento() != null ? getDepartamento().getNombre() : "Sin asignar") +
+                ", telefono= '" + telefono + '\'' +
+                ", listaProyectos= " + listaProyectos.stream().map(Proyecto::getNombre).toList();
+    }
+
 }

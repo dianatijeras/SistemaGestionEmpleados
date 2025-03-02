@@ -62,4 +62,18 @@ public class Empleado {
     public void setDepartamento(Departamento departamento) {
         this.departamento = departamento;
     }
+
+
+    /**
+     * Metodo toString de la clase
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "nombre= '" + nombre + '\'' +
+                ", id= '" + id + '\'' +
+                ", departamento=" + (departamento != null ? departamento.getNombre() : "Sin asignar") +
+                '}';
+    }
 }

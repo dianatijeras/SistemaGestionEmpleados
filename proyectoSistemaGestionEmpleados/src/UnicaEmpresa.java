@@ -2,6 +2,7 @@ public class UnicaEmpresa {
 
     private static UnicaEmpresa instancia;
 
+
     /**
      * Constructor privado de la clase UnicaEmpresa para evitar la creación de instancias fuera de esta clase
      */
@@ -20,4 +21,7 @@ public class UnicaEmpresa {
         }
         return instancia;
     }
+
+
+    //kadhsah
 }

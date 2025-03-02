@@ -65,4 +65,30 @@ public class Proyecto {
     public void setListaEmpleados(Collection<Empleado> listaEmpleados) {
         this.listaEmpleados = listaEmpleados;
     }
+
+    @Override
+    public String toString() {
+        return "Proyecto{" +
+                "nombre='" + nombre + '\'' +
+                ", codigo='" + codigo + '\'' +
+                ", listaEmpleados=" + listaEmpleados +
+                '}';
+    }
+
+    public boolean verificarEmpleado(String id) {
+        boolean centinela = false;
+        for (Empleado empleado : listaEmpleados) {
+            if (empleado.getId().equals(id)) {
+                return true;
+            }
+        }
+        return centinela;
+    }
+
+    //lololo
+    public void agregarEmpleado(Empleado empleado) {
+        if (!verificarEmpleado(empleado.getId())) {
+            listaEmpleados.add(empleado);
+        }
+    }
 }
