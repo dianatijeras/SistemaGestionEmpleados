@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.LinkedList;
 
 public class Departamento {
 
@@ -63,5 +64,9 @@ public class Departamento {
      */
     public void setListaEmpleados(Collection<Empleado> listaEmpleados) {
         this.listaEmpleados = listaEmpleados;
+    }
+
+    public Collection<Empleado> listarEmpleados(){
+        return new LinkedList<>()(listaEmpleadosDepartamento);
     }
 }

@@ -84,4 +84,14 @@ public class Empresa {
     public void setListaProyectos(Collection<Proyecto> listaProyectos) {
         this.listaProyectos = listaProyectos;
     }
+
+
+    public void asignarProyectoAGerente(Gerente gerente, Proyecto proyecto){
+        if(!gerente.getListaProyectos().contains(proyecto)){
+            gerente.getListaProyectos().add(proyecto);
+            proyecto.agregarEmpleado(gerente);
+        } else {
+            System.out.println("El gerente ya esta asignado a este proyecto");
+        }
+    }
 }
