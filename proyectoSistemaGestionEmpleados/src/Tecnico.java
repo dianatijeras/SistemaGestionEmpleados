@@ -16,6 +16,6 @@ public class Tecnico extends Empleado implements IContribuyente{
 
     @Override
     public String toString() {
-        return "Tecnico{ Nombre = " +getNombre()+ ", Id= " +getId()+ ", Departamento= " +getDepartamento()+ " }";
+        return "Tecnico{ Nombre = " +getNombre()+ ", Id= " +getId()+ ", Departamento: "+(getDepartamento() != null ? getDepartamento().getNombre() : "Sin asignar") + " }";
     }
 }

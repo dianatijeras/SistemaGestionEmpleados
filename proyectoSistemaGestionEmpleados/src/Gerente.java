@@ -67,9 +67,9 @@ public class Gerente extends Empleado implements IContribuyente {
     @Override
     public String toString() {
         return "Gerente: Nombre= "+ getNombre() +
-                ", Id= " + getId() + ", Departamento= " + getDepartamento() +
+                ", Id= " + getId() + ", Departamento: "+(getDepartamento() != null ? getDepartamento().getNombre() : "Sin asignar") +
                 ", telefono= '" + telefono + '\'' +
-                ", listaProyectos= " + listaProyectos;
+                ", listaProyectos= " + listaProyectos.stream().map(Proyecto::getNombre).toList();
     }
 
 }

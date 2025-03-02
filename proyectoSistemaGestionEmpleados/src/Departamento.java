@@ -71,7 +71,7 @@ public class Departamento {
         return "Departamento{" +
                 "nombre='" + nombre + '\'' +
                 ", codigo='" + codigo + '\'' +
-                ", listaEmpleados=" + listaEmpleadosDepartamento +
+                ", listaEmpleados=" + listaEmpleadosDepartamento.toString() +
                 '}';
     }
 

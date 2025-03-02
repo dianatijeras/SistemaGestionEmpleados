@@ -12,7 +12,6 @@ public class Empresa {
 
     /**
      * Constructor de la clase principal Empresa
-     *
      * @param nombre
      */
     public Empresa(String nombre) {
@@ -94,14 +93,13 @@ public class Empresa {
     public void crearNunevoEmpleado() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Nombre: ");
+        System.out.println("Ingrese el nombre del empleado: ");
         String nombre = scanner.nextLine();
 
         String id;
         do {
-            System.out.println("id: ");
+            System.out.println("Ingrese la cédula del nuevo empleado: ");
             id = scanner.nextLine();
-
             if (verificarEmpleado(id)) {
                 System.out.println("Ya existe un empleado con esa cédula. Por favor, ingrese una cédula diferente.");
             }
@@ -119,12 +117,12 @@ public class Empresa {
     public void crearNuevoGerente() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Nombre: ");
+        System.out.println("Ingrese el nombre del gerente: ");
         String nombre = scanner.nextLine();
 
         String id;
         do {
-            System.out.println("id: ");
+            System.out.println("Ingrese la cédula del nuevo gerente: ");
             id = scanner.nextLine();
 
             if (verificarEmpleado(id)) {
@@ -132,7 +130,7 @@ public class Empresa {
             }
         } while (verificarEmpleado(id));
 
-        System.out.println("Telefono: ");
+        System.out.println("Ingrese el telefono del gerente: ");
         String telefono = scanner.nextLine();
 
         Gerente gerente = new Gerente(nombre, id, null, telefono);
@@ -146,7 +144,7 @@ public class Empresa {
     public void crearNuevoTecnico() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Nombre: ");
+        System.out.println("Ingrese el nombre del tecnico: ");
         String nombre = scanner.nextLine();
 
         String id;
@@ -181,7 +179,6 @@ public class Empresa {
 
     /**
      * Metodo para agregar un nuevo empleado a la lista de empleados
-     *
      * @param empleado
      */
     public void agregarEmpleado(Empleado empleado) {
@@ -203,15 +200,19 @@ public class Empresa {
 
     //CRUD departamento
 
+
+    /**
+     * Metodo para crear un nuevo departamento
+     */
     public void crearNuevoDepartamento() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Nombre del departamento: ");
+        System.out.println("Ingrese el nombre del nuevo departamento: ");
         String nombre = scanner.nextLine();
 
         String codigo;
         do {
-            System.out.println("codigo del departamento: ");
+            System.out.println("Ingrese el codigo del nuevo departamento: ");
             codigo = scanner.nextLine();
 
             if (verificarDepartamento(codigo)) {
@@ -219,18 +220,26 @@ public class Empresa {
             }
         } while (verificarDepartamento(codigo));
 
-
         Departamento departamento = new Departamento(nombre, codigo);
 
         agregarDepartamento(departamento);
     }
 
+    /**
+     * Metodo que agrega un departamento a la lista de departamentos de la empresa
+     * @param departamento
+     */
     public void agregarDepartamento(Departamento departamento) {
         if (!verificarDepartamento(departamento.getCodigo())) {
             listaDepartamentos.add(departamento);
         }
     }
 
+    /**
+     * Metodo que verifica que no existan dos departamentos con el mismo id
+     * @param codigo
+     * @return centinela
+     */
     public boolean verificarDepartamento(String codigo) {
         boolean centinela = false;
         for (Departamento departamento : listaDepartamentos) {
@@ -242,15 +251,19 @@ public class Empresa {
     }
 
     //CRUD Proyecto
+
+    /**
+     * Metodo para crear un nuevo proyecto
+     */
     public void crearNuevoProyecto() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Nombre del proyecto: ");
+        System.out.println("Ingrese el nombre del nuevo proyecto: ");
         String nombre = scanner.nextLine();
 
         String codigo;
         do {
-            System.out.println("codigo del proyecto: ");
+            System.out.println("Ingrese el codigo del nuevo proyecto: ");
             codigo = scanner.nextLine();
 
             if (verificarProyectos(codigo)) {
@@ -258,18 +271,26 @@ public class Empresa {
             }
         } while (verificarProyectos(codigo));
 
-
         Proyecto proyecto = new Proyecto(nombre, codigo);
 
         agregarProyecto(proyecto);
     }
 
+    /**
+     * Metodo para agregar un pryecto a la lista de proyectos de la empresa
+     * @param proyecto
+     */
     public void agregarProyecto(Proyecto proyecto) {
         if (!verificarProyectos(proyecto.getCodigo())) {
             listaProyectos.add(proyecto);
         }
     }
 
+    /**
+     * Metodo para verificar que no existan dos proyectos con el mismo codigo
+     * @param codigo
+     * @return centinela
+     */
     public boolean verificarProyectos(String codigo) {
         boolean centinela = false;
         for (Proyecto proyecto : listaProyectos) {
@@ -280,44 +301,84 @@ public class Empresa {
         return centinela;
     }
 
-    //Asignar empleados a un departamento
+    /**
+     * Metodo para asignar a un empleado a un departamento
+     */
     public void asignarEmpleadoADepartamento() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el id del empleado: ");
+        System.out.println("Ingrese el ID o cédula del empleado: ");
         String id = scanner.nextLine();
+
+        Empleado empleadoEncontrado = null;
         for (Empleado empleado : listaEmpleados) {
-            Empleado empleado0 = empleado;
             if (empleado.getId().equals(id)) {
-                System.out.println("Ingrese el codigo del departamento: ");
-                String codigo = scanner.nextLine();
-                for (Departamento departamento : listaDepartamentos) {
-                    departamento.getCodigo().equals(codigo);
-                    Departamento departamento0 = departamento;
-                    departamento0.agregarEmpleado(empleado0);
-                    empleado0.setDepartamento(departamento0);
-                }
+                empleadoEncontrado = empleado;
+                break;
             }
         }
+
+        if (empleadoEncontrado == null) {
+            System.out.println("Empleado no encontrado.");
+            return;
+        }
+
+        System.out.println("Ingrese el código del departamento: ");
+        String codigo = scanner.nextLine();
+
+        Departamento departamentoEncontrado = null;
+        for (Departamento departamento : listaDepartamentos) {
+            if (departamento.getCodigo().equals(codigo)) {
+                departamentoEncontrado = departamento;
+                break;
+            }
+        }
+
+        if (departamentoEncontrado == null) {
+            System.out.println("Departamento no encontrado.");
+            return;
+        }
+
+        departamentoEncontrado.agregarEmpleado(empleadoEncontrado);
+        empleadoEncontrado.setDepartamento(departamentoEncontrado);
+
+        System.out.println("Empleado asignado correctamente al departamento.");
     }
 
-    //Asignar empleados a un Proyecto
+
+
+    /**
+     * Metodo para asignar un empleado a un proyecto
+     */
     public void asignarEmpleadoAProyecto() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el id del empleado: ");
+        System.out.println("Ingrese el id o cédula del empleado: ");
         String id = scanner.nextLine();
+
         for (Empleado empleado : listaEmpleados) {
-            Empleado empleado0 = empleado;
             if (empleado.getId().equals(id)) {
-                System.out.println("Ingrese el codigo del Proyecto: ");
+                System.out.println("Ingrese el código del Proyecto: ");
                 String codigo = scanner.nextLine();
+
                 for (Proyecto proyecto : listaProyectos) {
-                    proyecto.getCodigo().equals(codigo);
-                    Proyecto proyecto0 = proyecto;
-                    proyecto0.agregarEmpleado(empleado0);
+                    if (proyecto.getCodigo().equals(codigo)) {
+                        proyecto.agregarEmpleado(empleado);
+
+                        // Si el empleado es un Gerente, se le asigna el proyecto a su lista de proyectos
+                        if (empleado instanceof Gerente) {
+                            Gerente gerente = (Gerente) empleado;
+                            gerente.getListaProyectos().add(proyecto);
+                        }
+
+                        System.out.println("Empleado asignado correctamente al proyecto.");
+                        return;
+                    }
                 }
+                System.out.println("No se encontró un proyecto con ese código.");
+                return;
             }
         }
+        System.out.println("No se encontró un empleado con ese ID.");
     }
 }

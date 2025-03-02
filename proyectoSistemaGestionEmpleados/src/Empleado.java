@@ -73,7 +73,7 @@ public class Empleado {
         return "Empleado{" +
                 "nombre= '" + nombre + '\'' +
                 ", id= '" + id + '\'' +
-                ", departamento=" + departamento.getNombre() +
+                ", departamento=" + (departamento != null ? departamento.getNombre() : "Sin asignar") +
                 '}';
     }
 }
